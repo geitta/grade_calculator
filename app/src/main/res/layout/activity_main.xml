@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16sp"
+    android:background="@drawable/main_container_background"
+    android:padding="16dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.25"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="56dp"
+        android:text="SUBJECT"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ccs1030"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="CCS 1030"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/subject"
+        app:layout_constraintTop_toBottomOf="@+id/subject" />
+
+    <TextView
+        android:id="@+id/ccs3040"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="CCS 3040"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ccs1030"
+        app:layout_constraintTop_toBottomOf="@+id/ccs1030" />
+
+    <TextView
+        android:id="@+id/ccs3060"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="CCS 3060"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ccs3040"
+        app:layout_constraintTop_toBottomOf="@+id/ccs3040" />
+
+    <TextView
+        android:id="@+id/ccs3080"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="CCS 3080"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ccs3060"
+        app:layout_constraintTop_toBottomOf="@+id/ccs3060" />
+
+    <TextView
+        android:id="@+id/ccs4050"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="CCS 4050"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ccs3080"
+        app:layout_constraintTop_toBottomOf="@+id/ccs3080" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="SCORE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/subject"
+        app:layout_constraintStart_toEndOf="@+id/subject" />
+
+    <EditText
+        android:id="@+id/etccs1030"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:background="@drawable/green_border_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGradeCcs1030"
+        app:layout_constraintStart_toStartOf="@+id/score"
+        app:layout_constraintTop_toTopOf="@+id/tvGradeCcs1030" />
+
+    <EditText
+        android:id="@+id/etccs3040"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:background="@drawable/green_border_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGradeCcs3040"
+        app:layout_constraintStart_toStartOf="@+id/etccs1030"
+        app:layout_constraintTop_toTopOf="@+id/tvGradeCcs3040" />
+
+    <EditText
+        android:id="@+id/etccs3060"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:background="@drawable/green_border_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGradeCcs3060"
+        app:layout_constraintStart_toStartOf="@+id/etccs3040"
+        app:layout_constraintTop_toTopOf="@+id/tvGradeCcs3060" />
+
+    <EditText
+        android:id="@+id/etccs3080"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:background="@drawable/green_border_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGradeCcs3080"
+        app:layout_constraintStart_toStartOf="@+id/etccs3060"
+        app:layout_constraintTop_toTopOf="@+id/tvGradeCcs3080"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvGradeCcs3080"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/green_border_background"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvGradeCcs3060"
+        app:layout_constraintTop_toBottomOf="@+id/tvGradeCcs3060" />
+
+    <EditText
+        android:id="@+id/etccs4050"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:background="@drawable/green_border_background"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGradeCcs4050"
+        app:layout_constraintStart_toStartOf="@+id/etccs3080"
+        app:layout_constraintTop_toTopOf="@+id/tvGradeCcs4050"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvGradeCcs4050"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/green_border_background"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvGradeCcs3080"
+        app:layout_constraintTop_toBottomOf="@+id/tvGradeCcs3080" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:text="GRADE"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/score"
+        app:layout_constraintStart_toEndOf="@+id/score" />
+
+    <TextView
+        android:id="@+id/tvGradeCcs1030"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/green_border_background"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/grade"
+        app:layout_constraintTop_toBottomOf="@+id/grade" />
+
+    <TextView
+        android:id="@+id/tvGradeCcs3040"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_border_background"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvGradeCcs1030"
+        app:layout_constraintTop_toBottomOf="@+id/tvGradeCcs1030" />
+
+    <TextView
+        android:id="@+id/tvGradeCcs3060"
+        android:layout_width="70dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/green_border_background"
+        android:gravity="center"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tvGradeCcs3040"
+        app:layout_constraintTop_toBottomOf="@+id/tvGradeCcs3040" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

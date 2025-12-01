@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- background color of the container -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- outer border -->
+    <stroke
+        android:width="4dp"
+        android:color="#4CAF50" /> <!-- The same green color -->
+
+    <!-- corner radius to make it rounded -->
+    <corners android:radius="30dp" />
+
+</shape>
+    
